@@ -2,12 +2,15 @@
 
 def floor_count(data):
 	floor = 0
+	position = 0
 	for char in data:
 		if char == '(':
-			nextFloor = floor + 1
+			floor += 1
 		else:
-			nextFloor = floor - 1
-		floor = nextFloor
+			floor -= 1
+		position += 1
+		if floor == -1:
+			print char, position, floor
 	return floor
 
 fhand = open('input_01.txt')
