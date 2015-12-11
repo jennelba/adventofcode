@@ -19,7 +19,8 @@
 
 # To what floor do the instructions take Santa?
 
-def floor_count(data):
+
+def floorCount(data):
 	"""Function to find the floor number to which the instructions take Santa."""
 	floor = 0
 	for char in data:
@@ -30,7 +31,7 @@ def floor_count(data):
 	return floor
 
 
-fhand = open('input_01.txt')
+fhand = open('day01_input.txt')
 inp = fhand.read()
 
-print floor_count(inp)
+print floorCount(inp)

@@ -27,8 +27,10 @@
 
 # What is the position of the character that causes Santa to first enter the basement?
 
-def position_count(data):
-	"""Function to find the floor number to which the instructions take Santa."""
+
+def positionCount(data):
+	"""Function to find the position of the character that causes Santa to enter
+	basement for the first time."""
 	floor = 0
 	position = 0
 	for char in data:
@@ -41,7 +43,7 @@ def position_count(data):
 			return position
 
 
-fhand = open('input_01.txt')
+fhand = open('day01_input.txt')
 inp = fhand.read()
 
-print position_count(inp)
+print positionCount(inp)
